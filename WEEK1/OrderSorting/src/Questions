@@ -10,7 +10,8 @@ Time Complexity: O(n^2) in the worst case; O(n) in the best case (when the array
 Space Complexity: O(1) (in-place sort).
 Quick Sort:
 
-Description: Divides the array into two sub-arrays based on a pivot element and recursively sorts the sub-arrays. The division is done such that elements less than the pivot go to the left and elements greater go to the right.
+Description: Divides the array into two sub-arrays based on a pivot element and recursively sorts the sub-arrays. 
+The division is done such that elements less than the pivot go to the left and elements greater go to the right.
 Time Complexity: O(n log n) on average; O(n^2) in the worst case (rare, usually avoided with good pivot selection strategies).
 Space Complexity: O(log n) on average (due to recursion stack).
 Merge Sort:
