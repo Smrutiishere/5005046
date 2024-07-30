@@ -1,0 +1,36 @@
+Bubble Sort:
+
+Description: Compares adjacent elements and swaps them if they are in the wrong order. Repeats this process until the entire list is sorted.
+Time Complexity: O(n^2) in the worst and average cases.
+Space Complexity: O(1) (in-place sort).
+Insertion Sort:
+
+Description: Builds the sorted array one item at a time by comparing and inserting each item into its correct position in the sorted portion of the array.
+Time Complexity: O(n^2) in the worst case; O(n) in the best case (when the array is already sorted).
+Space Complexity: O(1) (in-place sort).
+Quick Sort:
+
+Description: Divides the array into two sub-arrays based on a pivot element and recursively sorts the sub-arrays. The division is done such that elements less than the pivot go to the left and elements greater go to the right.
+Time Complexity: O(n log n) on average; O(n^2) in the worst case (rare, usually avoided with good pivot selection strategies).
+Space Complexity: O(log n) on average (due to recursion stack).
+Merge Sort:
+
+Description: Divides the array into two halves, recursively sorts each half, and then merges the sorted halves.
+Time Complexity: O(n log n) in all cases.
+Space Complexity: O(n) (requires additional space for merging).
+ Analysis
+Performance Comparison:
+
+Bubble Sort:
+
+Time Complexity: O(n^2) in the average and worst cases. It is inefficient for large datasets because it repeatedly makes passes through the data.
+Space Complexity: O(1) (in-place).
+Quick Sort:
+
+Time Complexity: O(n log n) on average, making it significantly faster for large datasets. The worst-case time complexity is O(n^2) but can be mitigated with good pivot selection strategies (like choosing a random pivot).
+Space Complexity: O(log n) on average due to recursion stack.
+Why Quick Sort is Generally Preferred:
+
+Efficiency: Quick Sort has a better average-case time complexity compared to Bubble Sort.
+Scalability: Quick Sort performs significantly better on large datasets due to its divide-and-conquer approach.
+Practicality: Quick Sort is widely used in practice because it can be optimized to handle a variety of cases and has good cache performance.

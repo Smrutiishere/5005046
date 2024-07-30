@@ -1,0 +1,51 @@
+Exercise 4: Employee Management System
+Scenario: 
+You are developing an employee management system for a company. Efficiently managing employee records is crucial.
+Steps:
+Understand Array Representation:
+Explain how arrays are represented in memory and their advantages.
+Setup:
+Create a class Employee with attributes like employeeId, name, position, and salary.
+Implementation:
+Use an array to store employee records.
+Implement methods to add, search, traverse, and delete employees in the array.
+Analysis:
+Analyze the time complexity of each operation (add, search, traverse, delete).
+Discuss the limitations of arrays and when to use them.
+
+How Arrays are Represented in Memory:
+
+Arrays are stored in contiguous memory locations. This allows for fast access to elements via indexing, as the address of any element can be calculated directly using the base address and the index.
+ The size of an array is fixed upon creation. If you need to resize the array, you must create a new array and copy the elements.
+Advantages:
+Constant Time Access: Accessing elements by index is O(1) due to direct memory addressing.
+Simple and Efficient: Arrays are simple to use and manage due to their straightforward structure.
+Limitations:
+
+Fixed Size: You must know the maximum number of elements in advance or manage resizing manually.
+Insertions and Deletions: Adding or removing elements (except at the end) requires shifting elements, which can be inefficient (O(n) time complexity).
+Analysis
+Time Complexity of Each Operation:
+
+Add Employee:
+
+Average Time Complexity: O(1) (if there is space in the array). However, if the array is full, no additional elements can be added without resizing.
+Search Employee by ID:
+
+Time Complexity: O(n) in the worst case (linear search). This involves scanning through the array to find the employee.
+Delete Employee by ID:
+
+Time Complexity: O(n) in the worst case (linear search plus shifting elements). It requires finding the employee and then shifting subsequent elements to fill the gap.
+Traverse and Display Employees:
+
+Time Complexity: O(n), as it involves iterating through the array.
+Limitations of Arrays:
+
+Fixed Size: Once an array is created, its size cannot be changed. If more space is needed, a new array must be created and elements copied.
+Insertion and Deletion Complexity: Inserting or deleting elements (except at the end) requires shifting elements, which can be inefficient.
+Memory Usage: Arrays may waste space if the allocated capacity is much larger than the actual number of elements.
+When to Use Arrays:
+
+Arrays are useful when the number of elements is known in advance and does not change frequently.
+They are efficient for accessing elements by index and are straightforward to implement.
+For scenarios with dynamic sizes and frequent insertions or deletions, data structures like ArrayList, LinkedList, or more complex structures like trees or hash maps might be more appropriate.

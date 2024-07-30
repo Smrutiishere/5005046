@@ -1,0 +1,24 @@
+Recursion:
+
+Concept: Recursion is a method where a function calls itself to solve a smaller instance of the same problem. It breaks down complex problems into simpler ones.
+Base Case: The condition under which the recursion stops.
+Recursive Case: The condition under which the function continues to call itself.
+Advantages:
+
+Simplifies code for problems that can be broken down into smaller sub-problems of the same type.
+Disadvantages:
+
+May lead to excessive computation if not properly optimized.
+Can cause stack overflow if the recursion depth is too deep.
+Time Complexity:
+
+Time Complexity of Recursive Algorithm:
+The calculateFutureValue function makes a recursive call for each period. Hence, the time complexity is O(n), where n is the number of periods. Each call performs constant-time operations aside from the recursive call.
+Optimizing Recursive Solution:
+
+Memoization: To avoid redundant calculations in cases where the function might compute the same values multiple times, you can use memoization to store already computed results.
+
+Iteration: For problems where recursion depth is significant, using iterative solutions (loops) can be more efficient in terms of both time and space complexity. For example, you could convert the recursion to a loop to avoid the overhead of recursive calls and potential stack overflow.
+Recursive Approach: Simplifies the problem but may have performance issues for large input sizes due to high recursion depth and overhead.
+Iterative Approach: More efficient and avoids recursion-related issues.
+Choosing between recursion and iteration depends on the specific problem requirements and constraints, such as input size and performance considerations.

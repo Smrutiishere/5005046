@@ -1,0 +1,38 @@
+Types of Linked Lists:
+
+Singly Linked List:
+Description: Each node contains data and a reference to the next node. Traversal is unidirectional (from head to end).
+Operations: Insertions and deletions are efficient (O(1)) at the head. For other positions, you must traverse the list (O(n)).
+Doubly Linked List:
+Description: Each node contains data and references to both the next and the previous nodes. Traversal can be bidirectional.
+Operations: Insertions and deletions are efficient (O(1)) at any position if you have a reference to the node. It requires more memory due to the extra reference.
+Advantages of Linked Lists Over Arrays:
+
+Dynamic Size: Linked lists can grow and shrink dynamically as elements are added or removed.
+Efficient Insertions/Deletions: Insertions and deletions can be performed efficiently without needing to shift elements (O(1) if the node reference is available).
+Memory Utilization: Linked lists use memory more efficiently for dynamic datasets since they only allocate memory as needed.
+
+Analysis
+Time Complexity of Each Operation:
+
+Add Task:
+
+Time Complexity: O(n) in the worst case (if the list needs to be traversed to find the end).
+Search Task by ID:
+
+Time Complexity: O(n) in the worst case (linear search through the list).
+Delete Task by ID:
+
+Time Complexity: O(n) in the worst case (linear search through the list to find the task and update pointers).
+Traverse and Display Tasks:
+
+Time Complexity: O(n), as it involves iterating through the entire list.
+Advantages of Linked Lists Over Arrays for Dynamic Data:
+
+Dynamic Size: Linked lists can grow and shrink dynamically, unlike arrays which require a predefined size.
+Efficient Insertions/Deletions: Adding or removing elements can be done efficiently (O(1) if the node reference is available) without the need to shift elements as in arrays.
+Memory Utilization: Memory is allocated as needed, potentially saving space compared to arrays with unused allocated capacity.
+When to Use Linked Lists:
+
+Linked lists are particularly useful when the number of elements can change frequently, and efficient insertions and deletions are required.
+They are less suitable when frequent random access or fixed-size data is needed, where arrays or other data structures might be more appropriate.

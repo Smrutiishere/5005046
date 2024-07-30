@@ -1,0 +1,48 @@
+Exercise 6: Library Management System
+Scenario: 
+You are developing a library management system where users can search for books by title or author.
+Steps:
+Understand Search Algorithms:
+Explain linear search and binary search algorithms.
+Setup:
+Create a class Book with attributes like bookId, title, and author.
+Implementation:
+Implement linear search to find books by title.
+Implement binary search to find books by title (assuming the list is sorted).
+Analysis:
+Compare the time complexity of linear and binary search.
+Discuss when to use each algorithm based on the data set size and order.
+
+Linear Search:
+Searches each element in the list sequentially until the target element is found or the end of the list is reached.
+Time Complexity: O(n), where n is the number of elements in the list. This is because each element must be checked one by one.
+
+Binary Search:
+ Searches for an element in a sorted list by repeatedly dividing the search interval in half. It compares the target value to the middle element and reduces the search interval accordingly.
+Time Complexity: O(log n), where n is the number of elements in the list. This is due to the halving of the search space with each iteration.
+
+
+Analysis
+Time Complexity:
+
+Linear Search:
+
+Average Time Complexity: O(n) because it may need to examine each book in the array.
+Best Case: O(1) if the book is found at the first position.
+Worst Case: O(n) if the book is at the end of the list or not present.
+Binary Search:
+
+Average Time Complexity: O(log n) because it repeatedly divides the search interval in half.
+Best Case: O(1) if the book is found in the middle of the list.
+Worst Case: O(log n) for a list of size n.
+When to Use Each Algorithm:
+
+Linear Search:
+
+When the list is unsorted or the dataset is small.
+When simplicity is preferred and sorting the list is not feasible.
+Binary Search:
+
+When the list is sorted or can be sorted.
+When searching needs to be efficient, especially for large datasets.
+Requires additional time and effort to sort the list if it’s not already sorted.
